@@ -1,5 +1,5 @@
 steps:
   - name: 'gcr.io/cloud-builders/docker'
-    args: [ 'build', '-t', 'us-west2-docker.pkg.dev/todo-list-3c5e4/quickstart-docker-repo/quickstart-image:tag1', '../quickstart-docker/Dockerfile' ]
+    args: [ 'build', '-t', 'us-west2-docker.pkg.dev/todo-list-3c5e4/quickstart-docker-repo/quickstart-image:tag1', './quickstart-docker' ]
 images:
   - 'us-west2-docker.pkg.dev/todo-list-3c5e4/quickstart-docker-repo/quickstart-image:tag1'
