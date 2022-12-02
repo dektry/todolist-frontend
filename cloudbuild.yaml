@@ -3,5 +3,5 @@ steps:
     args: [ 'build', '-t', 'us-west2-docker.pkg.dev/todo-list-3c5e4/todolist-fe-docker-repo/todolist-fe-image:tag1', '.' ]
 images:
   - 'us-west2-docker.pkg.dev/todo-list-3c5e4/todolist-fe-docker-repo/todolist-fe-image:tag1'
-  - - dir: 'apps/todolist-fe-docker'
+  - dir: 'apps/todolist-fe-docker'
 # [END cloudbuild_quickstart_build]
