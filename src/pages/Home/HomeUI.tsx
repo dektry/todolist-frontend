@@ -45,6 +45,7 @@ export const HomeUI: FC<HomeUIProps> = ({
     <div className={classes.body}>
       <div className={classes.form}>
         <AddToDoForm
+          isLoading={isLoading}
           toDoInputText={toDoInputText}
           handleChangeToDoInput={handleChangeToDoInput}
           handleClickAddToDo={handleClickAddToDo}

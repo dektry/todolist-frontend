@@ -12,7 +12,7 @@ export function HomeContainer() {
     isLoading: isListLoading,
     data: toDoList,
     isFetching: isListFetching,
-  } = useFetchAllToDosQuery({ limit: 10, page: 0, isCompleted: false });
+  } = useFetchAllToDosQuery({ limit: 100, page: 0, isCompleted: false });
   const [deleteToDo, { isLoading: isDeleteLoading, isError: isDeleteError }] = useDeleteTodoMutation();
   const [createToDo, { isLoading: isCreateLoading, isError: isCreateError }] = useCreateToDoMutation();
 
